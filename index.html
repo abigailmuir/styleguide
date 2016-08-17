@@ -8,6 +8,7 @@
   </head>
   <body>
     <nav>
+      <div class="wrapper">
       <div id="mobilenav"><i class="fa fa-bars" aria-hidden="true"></i></div>
       <a href="#" class="nodeco"><img src="images/mediacomlogo.png" class="logo">
       <a href="#" class="navlink">Shop</a>
@@ -16,6 +17,7 @@
       <a href="#" class="utilitylink">Account</a>
       <a href="#" class="utilitylink">Business</a>
       <a href="#" class="utilitylink">Support</a>
+      </div>
       </nav>
 
 <!--       <div id="hero">
@@ -24,11 +26,11 @@
       <h4 class="white">This is h4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
       </div> -->
 
-    <div id="wrapper">
+    <div class="wrapper">
 
     <section>
       <h5 class="sectionheader">Typography</h5>
-      <h5 class="breadcrumb">This is &#9656; a breadcrumb</h5>
+      <h5 class="smalltext">This is &#9656; a breadcrumb</h5>
       <h1>This is h1</h1>
       <h2>This is h2</h2>
       <h3>This is h3</h3>
@@ -43,19 +45,19 @@
 
     <section>
       <h5 class="sectionheader">Buttons</h5>
-        <button href="#">Medium Button</button>
+        <button href="#" class="ctatext white">Medium Button</button>
         <br>
-        <button href="#" disabled="true">Medium Button</button>
+        <button href="#" class="ctatext white" disabled="true">Medium Button</button>
         <br>
-        <button href="#" class="smallbutton">Small Button</button>
+        <button href="#" class="buttonsmall ctatext white">Small Button</button>
         <br>
-        <button href="#" class="smallbutton" disabled="true">Small Button</button>
+        <button href="#" class="buttonsmall ctatext white" disabled="true">Small Button</button>
         <br>
-        <button href="#" class="back smallbutton"><img src="images/backcaret.svg" class="buttoniconr">Back</button>
-        <button href="#" class="smallbutton">Next<img src="images/whitecaret.svg" class="buttoniconl"></button>
+        <button href="#" class="back buttonsmall ctatext"><img src="images/backcaret.svg" class="buttoniconr">Back</button>
+
+        <button href="#" class="buttonsmall ctatext white">Next<img src="images/whitecaret.svg" class="buttoniconl"></button>
         <br>
-        <button href="#">Start Shopping &nbsp;&nbsp;
-        <svg width="15px" height="10px" viewBox="133 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <button href="#" class="ctatext white">Start Shopping &nbsp;&nbsp;<svg width="15px" height="10px" viewBox="133 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Icon-Arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(134.000000, 1.000000)" stroke-linecap="round">
                 <g id="Arrow-Icon" stroke="#FFFFFF" stroke-width="2">
                     <polyline id="Path-1" stroke-linejoin="round" transform="translate(10.105263, 4.000000) scale(1, -1) rotate(-90.000000) translate(-10.105263, -4.000000) " points="6.31578947 2 10.1052632 6 13.8947368 2"></polyline>
@@ -64,34 +66,71 @@
             </g>
         </svg>
         </button>
-         <br>
-        <button href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Check Availability</button>
+        <br>
+        <button href="#" class="ctatext white"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Check Availability</button>
+        <br>
     </section>
 
     <section>
       <h5 class="sectionheader">Links with Icons and SVGS</h5>
-      <a href="#" class="ctablue">Caret Button</a><img src="images/bluecaret.svg" class="buttoniconl">
-      <br>
-      <br>
-      <a href="#" class="ctapurple">Purple Button for tv psu pages</a><img src="images/purplecaret.svg">
-      <br>
-      <br>
-      <a href="#" class="ctablue">Badass Arrow Button</a><img src="images/bluearrow.svg" class="buttoniconl">
-      <br>
-      <br>
-      <img src="images/downcaret.svg"><a href="#" class="seedetails">See details</a>
-      <br>
-      <br>
-      <img src="images/upcaret.svg"><a href="#" class="seedetails">See less</a>
 
+      <a href="#" class="ctatext blue">Caret Button</a><img src="images/bluecaret.svg" class="buttoniconl">
+      <br>
+      <br>
+      <a href="#" class="ctatext purple">Purple Button for tv psu pages</a><img src="images/purplecaret.svg" class="buttoniconl">
+      <br>
+      <br>
+      <a href="#" class="ctatext blue">Badass Arrow Button</a><img src="images/bluearrow.svg" class="buttoniconl">
+      <br>
+      <br>
+      <img src="images/downcaret.svg" class="buttoniconr"><a href="#">See details</a>
+      <br>
+      <br>
+      <img src="images/upcaret.svg" class="buttoniconr"><a href="#">See less</a>
+      <br>
     </section>
+
+    <section>
+      <h5 class="sectionheader">Big buttons</h5>
+      <div class="xlbuttons gray5 clearfix">
+        <br>
+        <div class="buttonxl navybg"><a href="#">
+          <span class="ctatext white">Learn More</span>
+          <svg width="15px" height="10px" viewBox="133 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Icon-Arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(134.000000, 1.000000)" stroke-linecap="round">
+                  <g id="Arrow-Icon" stroke="#FFFFFF" stroke-width="2">
+                      <polyline id="Path-1" stroke-linejoin="round" transform="translate(10.105263, 4.000000) scale(1, -1) rotate(-90.000000) translate(-10.105263, -4.000000) " points="6.31578947 2 10.1052632 6 13.8947368 2"></polyline>
+                      <path d="M10.4395949,4 L0,4" id="Path-4883"></path>
+                  </g>
+              </g>
+          </svg>
+          <h1 class="white">Why Mediacom?</h1></a>
+        </div>
+
+        <div class="buttonxl contactusbg"><a href="#">
+          <span class="ctatext white">Contact Us</span>
+          <svg width="15px" height="10px" viewBox="133 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Icon-Arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(134.000000, 1.000000)" stroke-linecap="round"><g id="Arrow-Icon" stroke="#FFFFFF" stroke-width="2"><polyline id="Path-1" stroke-linejoin="round" transform="translate(10.105263, 4.000000) scale(1, -1) rotate(-90.000000) translate(-10.105263, -4.000000) " points="6.31578947 2 10.1052632 6 13.8947368 2"></polyline><path d="M10.4395949,4 L0,4" id="Path-4883"></path></g></g></svg>
+          <h1 class="white">We're here <br>to help</h1></a>
+        </div>
+        <br>
+      </div>
+    </section>
+
+    <section>
+      <h5 class="sectionheader">Form Fields</h5>
+      <input type="text" placeholder="Text">
+      <input type="text" placeholder="Invalid" class="invalid">
+      </section>
 
 
 
     </div>
+
     <footer>
+    <div class="wrapper">
     <h5>Footer Header</h5>
     <a href="#">Footer link</a>
+    </div>
     </footer>
 
     <script type="text/javascript" src="js/project.js"></script>
