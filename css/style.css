@@ -24,13 +24,18 @@ body {
 	margin: 0 auto;
 	clear: both;
 	box-sizing: content-box;
-	padding-top: 40px;
 }
 
 section {
-	margin-bottom: 30px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #E9ECF2;
+}
+
+.sectionheader {
+	padding-bottom: 20px;
+	font-size: 10px;
+	color: #9B9B9B;
 }
 
 /*End just for this document*/
@@ -67,15 +72,10 @@ nav a:active, nav a:hover {
 	padding-bottom: 22px;
 }
 
-nav a.utilitylink {
+nav a.utilitylink, nav a.utilitylink:hover {
 	color: #9B9B9B;
 	float: right;
 	border-bottom: none;
-}
-
-nav a.nodeco {
-	border-bottom: none;
-	padding-bottom: 0;
 }
 
 .logo {
@@ -84,6 +84,15 @@ nav a.nodeco {
 	margin-top: -12px;
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+.nodeco:hover {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+#mobilenav {
+	display: none;
 }
 
 /*Typography for desktop*/
@@ -103,47 +112,59 @@ h2 {
 }
 
 h3 {
-	font-size: 35px;
-	line-height: 40px;
+	font-size: 2.917em;
+	/*line-height: 40px;*/
 	font-weight: 100;
 	padding-bottom: 15px;
 }
 
 h4 {
-	font-size: 20px;
-	line-height: 26px;
+	font-size: 1.6667em;
+	/*line-height: 26px;*/
 	font-weight: 100;
 	padding-bottom: 10px;
 }
 
 h5 {
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 1em;
+	/*line-height: 16px;*/
 	font-weight: 800;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-bottom: 10px;
+	padding-bottom: 0.833em;
 }
 
 h6 {
-	font-size: 12px;
+	font-size: 1em;
 	font-weight: 200;
-	line-height: 21px;
+	/*line-height: 21px;*/
+	color: #585959;
+	padding-bottom: 0.833em;
+}
+
+p {
+	font-size: 1.4166em;
+	/*line-height: 26px;*/
 	color: #585959;
 	padding-bottom: 10px;
 }
 
-p {
-	font-size: 17px;
-	line-height: 26px;
-	color: #585959;
+h5.breadcrumb {
+	font-size: 9px;
 }
+
+/*The footer*/
 
 footer {
 	background: #2E3030;
 	box-sizing: border-box;
 	padding: 65px;
 	margin-top: 20px;
+}
+
+footer h5 {
+	font-size: 10px;
+	color: #9B9B9B;
 }
 
 footer a {
@@ -153,8 +174,6 @@ footer a {
 	line-height: 21px;
 	text-decoration: none;
 }
-
-/*Link styles*/
 
 a {
 	font-size: 12px;
@@ -169,49 +188,71 @@ a:hover {
 	color: #0196E6;
 }
 
+/*Buttons and such*/
+
 button {
 	background: #0055B7;
 	box-sizing: border-box;
 	border-radius: 2px;
-	padding: 20px;
 	border: none;
 	margin: 20px auto;
-}
-
-button.small {
-	padding: 14px;
-}
-
-button:hover {
-	background: #0196E6;
-}
-
-button: disabled {
-	background: #B3B6BF;
-}
-
-button a, button a:hover {
+	padding: 20px 40px;
 	font-family: "Gotham", sans-serif;
 	font-weight: 400;
 	font-size: 12px;
 	color: #FFFFFF;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
-/*This is the text style for CTAs instead of inline links. These are the ones that are often followed by an arrow*/
+button:hover {
+	background: #0196E6;
+}
 
-.buttonblue {
+button:disabled {
+	background: #B3B6BF;
+	cursor: not-allowed;
+}
+
+.smallbutton {
+	padding: 14px 25px;
+}
+
+.buttoniconl {
+	padding-left: 8px;
+}
+
+.buttoniconr {
+	padding-right: 8px;
+}
+
+
+
+/*Disabled styles, just to show them visually on the page without having to do any jquery*/
+
+.back {
+	background: #E9ECF2;
+	color: #B3B6BF;
+}
+
+.back:hover {
+	background: #f7f7f7;
+}
+
+
+/*non-button CTAS and such*/
+
+.ctablue {
 	font-family: "Gotham", sans-serif;
 	font-weight: 400;
 	font-size: 12px;
 	color: #0055B7;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-right: 8px;
 }
 
-.buttonwhite {
+.ctawhite {
 	font-family: "Gotham", sans-serif;
 	font-weight: 400;
 	font-size: 12px;
@@ -221,7 +262,7 @@ button a, button a:hover {
 	padding-right: 8px;
 }
 
-.buttonpurple {
+.ctapurple, .ctapurple:hover {
 	font-family: "Gotham", sans-serif;
 	font-weight: 400;
 	font-size: 12px;
@@ -231,7 +272,7 @@ button a, button a:hover {
 	padding-right: 8px;
 }
 
-.details {
+.seedetails {
 	padding-left: 8px;
 }
 
@@ -281,20 +322,6 @@ h4.boldmint, h6.boldmint {
 	color: #27AE60;
 }
 
-/*Only apply these classes to h5*/
-h5.footerheader {
-	font-size: 10px;
-	color: #9B9B9B;
-}
-
-
-h5.breadcrumb {
-	font-family: "Gotham", sans-serif;
-	font-weight: 500;
-	font-size: 9px;
-	color: #fff;
-	letter-spacing: .75px;
-}
 
 /*Only apply these classes to h6*/
 
@@ -383,8 +410,21 @@ p {
 	color: #585959;
 }
 
-nav a {
+.navlink, .utilitylink {
 	display: none;
+}
+
+#mobilenav {
+	display: block;
+	float: left;
+	color: #0055B7;
+	font-size: 1.2em;
+}
+
+.logo {
+	margin-top: -12px;
+	padding: 0;
+	float: right;
 }
 
 }
