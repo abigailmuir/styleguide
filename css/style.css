@@ -439,8 +439,8 @@ body {
 }
 
 h1 {
-	font-size: 50px;
-	line-height: 65px;
+	font-size: 44px;
+	line-height: 53px;
 }
 
 h2 {
@@ -476,9 +476,9 @@ p {
 }
 
 .logo {
-	margin-top: -12px;
-	padding: 0;
-	float: right;
+	display: none;
 }
+
+
 
 }
